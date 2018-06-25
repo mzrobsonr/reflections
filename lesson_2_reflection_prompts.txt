@@ -1,0 +1,63 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+O que acontece ao iniciar um repositório? Por que você precisa fazer isso?
+
+Ao iniciar um repositório você esta criando o arquivo .git com metadados 
+usados pelo Git, tornando o diretorio um repositório do Git. 
+Isso é necessário para que o Git possa controlar o versionamento dos arquivos 
+dentro do diretório e sub-diretorios.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+Em que se difere a área de preparação do diretório de trabalho e do repositório? Qual valor você acha que ela oferece?
+
+A área de preparação contém uma cópia temporária dos arquivos que eu marquei com a intenção
+de salvar no próximo commit. Isso facilita quando for realizar o commit de enviar todos os arquivos
+que estejam na área de preparação.
+
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+Como você pode usar a área de preparação para garantir que tenha um commit por alteração lógica?
+
+Eu adiciono todos os arquivos relacionados a uma alteração lógica na ára de preparação para que
+eu possa realizar um único commit.
+
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+Quais são algumas das situações em que branches seriam úteis para manter seu histórico organizado? 
+Como branches ajudariam?
+
+Quando hover alguma nova característica sendo implementada, quando estiver resolvendo algum 
+problema no código.
+
+
+How do the diagrams help you visualize the branch structure?
+
+Como os diagramas ajudam a visualizar a estrutura de branches?
+
+Ao exibir uma estrutura de branches através de um diagrama temos uma visão clara dos pontos
+de separação das lógicas e a partir de qual momento que uma branch esta valendo, evitando
+uma interpretação equivocada de alguma caracteristica adicionada em um outro branch e que
+não aparece no branch em questão.
+
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+Qual é o resultado da mesclagem de dois branches? Por que o representamos no diagrama dessa forma?
+
+A mesclagem de dois branches resultam em um terceiro branch que é a aplicação de todos os commits anteriores
+dos dois branches até o que originou a separação dos dois.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+Quais são os prós e contras da mesclagem automática do Git v. sempre fazer mesclagens manualmente?
+
+A mesclagem do Git vai facilitar muito a junção de dois branches e identificar as zonas de conflito,
+funcionando muito mais rápido que uma junção manual.
